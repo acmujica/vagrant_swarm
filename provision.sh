@@ -25,7 +25,7 @@ echo "Final update check"
 apt-get update
 apt-get -qqy upgrade
 
-vagrantTip="[35m[1mThe shared directory is located at /shared\\nTo access your shared files: cd /shared[m"
+vagrantTip="[35m[1mThe shared directory is located at /shared\\nTo access your shared files: cd /shared"
 echo -e $vagrantTip > /etc/motd
 
 echo "Done installing your virtual machine!"

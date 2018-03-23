@@ -7,7 +7,7 @@ Each machine is set up with a vagrant user that is added to the docker group.
 
 To set up these machines you will need to install VirtualBox and Vagrant.
 
-After that download this repository and run <code>vagrant up</code> from this
+After that, download/clone this repository and run <code>vagrant up</code> from this
 directory to install the machines. Next, type <code>vagrant ssh <MACHINE_NAME></code> 
 to access the machines command line. 
 
@@ -55,3 +55,6 @@ an IP address of one of our VM's
 To remove a function:
 
     faas-cli rm -f callme.yml 
+
+OpenFaaS comes with some example containers built in. One of these is a UI to see the functions that are deployed and will allow you to manually invoke the functions. On your machine you can visit http://192.168.100.71:8080/ui/ to see the default functions.
+
